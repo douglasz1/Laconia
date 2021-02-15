@@ -141,7 +141,7 @@ Laconia uses PHPUnit for unit testing. Tests will go in the `/tests` directory. 
 
 Laconia is a personal project created by Douglas Santana to learn the fundamentals of programming and modern web development from scratch. The main goals of the project are to learn MVC (Model View Controller) architecture, the OOP (Object-Oriented Programming) paradigm, routing, authentication, security, modern development practices, and how to tie it all together to make a functional web app.
 
-Laconia runs on PHP 7.2 and MySQL. It uses Composer to autoload classes, configuration and utility files, as well as future tests through PHPUnit. Node.js is used to compile Sass to CSS via npm scripts. The CSS framework [Primitive](https://taniarascia.github.io/primitive) was used for the design.
+Laconia runs on PHP 7.2 and MySQL. It uses Composer to autoload classes, configuration and utility files, as well as future tests through PHPUnit. Node.js is used to compile Sass to CSS via npm scripts. The CSS framework [Primitive] was used for the design.
 
 Here are some of the concepts I learned while writing this program:
 
