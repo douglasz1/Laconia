@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  my_app:
+    build: .
+    image: my_app
+    depends_on:
+      - mysql
+    volumes:
+      - ./docker/credentials.php:/var/www/laconia/config/credentials.php
+      - ./:/var/www/laconia
+      - /usr/local/etc/php/php.ini
+    ports:
+      - 8080:80
+  mysql:
+    image: mysql:5.7
+    ports:
+      - '3312:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=laconia
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    volumes:
+      - ./storage/tmp/db:/var/lib/mysql
